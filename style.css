@@ -22,12 +22,137 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .plushgram-phone {
   width: 50%;
   display: flex;
+  padding-top: 0.5rem;
   align-items: center;
   justify-content: center;
+}
+
+.plushgram-continue {
+  width: 55%;
+  display: flex;
+  padding-top: 3.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.group {
+  width: 90%;
+  display: flex;
+  margin: 0.5rem;
+  padding: 1.5rem 0;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  justify-content: space-around;
+}
+
+.group:nth-child(1) {
+  min-height: 24rem;
+  justify-content: space-between;
+}
+
+.group:nth-child(2) {
+  min-height: 6rem;
+  justify-content: space-around;
+}
+
+.plushgram-logo {
+  width: auto;
+  height: auto;
+}
+
+.profile-photo {
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.plushgram-login {
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #0095f6;
+}
+
+.plushgram-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app {
+  width: 100%;
+  display: flex;
+  padding: 1.3rem 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-text {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.download {
+  width: 80%;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('./img/app-store-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('./img/google-play-button.png');
+}
+
+@media(max-width: 1024px) {
+  .plushgram-wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width: 650px) {
+  .plushgram-wrapper {
+    width: 90%;
+  }
+  .plushgram-phone {
+    display: none;
+  }
+  .plushgram-continue {
+    width: 100%;
+  }
+  .download {
+    justify-content: space-between;
+  }
+  .group {
+    border: 1px solid transparent;
+  }
 }
